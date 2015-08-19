@@ -449,6 +449,8 @@ func main() {
 	if !specified {
 		namespace = "default"
 	}
+	
+	namespace = ""
 
 	// TODO: Handle multiple namespaces
 	lbc := newLoadBalancerController(cfg, kubeClient, namespace)
